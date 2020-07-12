@@ -2,6 +2,7 @@
 // Для этого создай функцию calculateEngravingPrice(message, pricePerWord) принимающую строку (в строке будут только слова и пробелы)
 // и цену гравировки одного слова, и возвращающую цену гравировки.
 
+
 function calculateEngravingPrice(message, pricePerWord) {
   const arr = message.split(' ');
   return arr.length * pricePerWord;

@@ -8,6 +8,7 @@
 // 2. Ограничить строку до 40 символов
 // 3. Если нет,то в конец строки добавить ...
 
+
 function formatString(string) {
   let symbols = string.slice(0, 40);
   if (string.length > symbols.length) {

@@ -2,11 +2,17 @@
 // Если нашли зарещенное слово то функция возвращает true,
 // если запрещенных слов нет функция возвращает false. Слова в строке могут быть в произвольном регистре.
 
-function checkForSpam(str) {
+
+const checkForSpam = function (message) {
   return (
-    str.toLowerCase().includes('spam') || str.toLowerCase().includes('sale')
+    message.toLowerCase().includes('spam') ||
+    message.toLowerCase().includes('sale')
   );
-}
+};
+
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
 console.log(checkForSpam('Latest technology news')); // false
 
 console.log(checkForSpam('JavaScript weekly newsletter')); // false
